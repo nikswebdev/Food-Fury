@@ -1,0 +1,12 @@
+.food__options {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 2rem;
+  overflow: scroll;
+  margin: 0 6rem;
+}
+
+.food__options::-webkit-scrollbar{
+    display: none;
+}

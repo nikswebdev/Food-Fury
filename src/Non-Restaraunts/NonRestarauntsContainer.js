@@ -1,8 +1,8 @@
-import AlcoholIcon from '../global/assets/AlcoholIcon';
-import ConvenienceIcon from '../global/assets/ConvenienceIcon';
-import GroceryIcon from '../global/assets/GroceryIcon';
-import OffersIcon from '../global/assets/OffersIcon';
-import ShippingIcon from '../global/assets/Shipping';
+import AlcoholIcon from '../global/assets/NonRestaraunts/AlcoholIcon';
+import ConvenienceIcon from '../global/assets/NonRestaraunts/ConvenienceIcon';
+import GroceryIcon from '../global/assets/NonRestaraunts/GroceryIcon';
+import OffersIcon from '../global/assets/NonRestaraunts/OffersIcon';
+import ShippingIcon from '../global/assets/NonRestaraunts/Shipping';
 import NonRestaraunts from '../UI/NonRestaraunts';
 import classes from './NonRestarauntsContainer.module.css';
 

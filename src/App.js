@@ -1,4 +1,5 @@
 import classes from './App.module.css';
+import FoodOptions from './FoodOptions/FoodOptions';
 import Nav from './Nav/Nav';
 import NonRestarauntsContainer from './Non-Restaraunts/NonRestarauntsContainer';
 
@@ -10,7 +11,8 @@ function App() {
         <NonRestarauntsContainer/>
       </header>
       <main className= {classes.main}>
-        
+        <FoodOptions/>
+        <div className={classes.dummy}></div>
       </main>
     </div>
   );
