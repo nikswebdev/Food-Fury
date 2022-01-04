@@ -1,0 +1,16 @@
+.cart{
+    background-color: #ff3008;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 7rem;
+    padding: .5rem;
+    gap: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .cart svg{
+      height: 2.25rem;
+      width: 2.25rem;
+  }

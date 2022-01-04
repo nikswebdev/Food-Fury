@@ -1,0 +1,25 @@
+.non-restaurants__container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: .75rem;
+    border-radius: 25px;
+}
+
+.non-restaurants__svg--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.85rem;
+    width: 3.85rem;
+    background-color: #ddf4f4;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 1.5rem;
+}
+.non-restaurants__container svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 1.75rem;
+    margin-left: .75rem;
+}

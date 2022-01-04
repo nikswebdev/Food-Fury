@@ -1,0 +1,16 @@
+.btn__nav{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: .7rem 1.25rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.btn__active{
+    background-color: black;
+    color: white;
+}

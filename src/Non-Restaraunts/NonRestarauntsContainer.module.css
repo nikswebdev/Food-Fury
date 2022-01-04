@@ -1,0 +1,9 @@
+.non-restaurants {
+    display: flex;
+    gap: 1.85rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background-color: #f7f7f7;
+  }
+  

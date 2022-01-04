@@ -1,0 +1,29 @@
+.search__icon svg{
+    transform: translate(4px, 2.5px);
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: #494949;
+  
+}
+.search__container label{
+    margin-left: 1rem;
+}
+
+.search__container{
+    display: flex;
+    align-items: center;
+    color: #494949;
+    background-color:  #f7f7f7;
+    padding: 4px;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.search__container input{
+    width: 12rem;
+    border: none;
+    outline: none;
+    background-color:  #f7f7f7;
+}

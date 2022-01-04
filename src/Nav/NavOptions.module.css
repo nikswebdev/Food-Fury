@@ -1,0 +1,10 @@
+.nav__options {
+    display: flex;
+    align-items: center;
+  
+}
+.nav__Options--text--small{
+    font-weight: 500;
+    margin-left: 1rem;
+    margin: 0 -.5rem;
+} 
