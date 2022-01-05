@@ -16,5 +16,6 @@
 }
 
 .rating__figures{
-    font-weight: 300;
+    color: rgb(126, 126, 126);
+    font-weight: 500;
 }

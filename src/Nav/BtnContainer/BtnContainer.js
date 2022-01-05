@@ -1,12 +1,12 @@
 import classes from './BtnContainer.module.css';
-import NavBtn from '../../UI/NavBtn';
+import BtnMain from '../../UI/BtnMain';
 
 const BtnContainer = () => {
 
   return (
     <div className={classes.nav__buttons}>
-      <NavBtn isActive = {true}>Delivery</NavBtn>
-      <NavBtn isActive = {false}>Pickup</NavBtn>
+      <BtnMain activeBlack = {true}>Delivery</BtnMain>
+      <BtnMain>Pickup</BtnMain>
     </div>
   );
 };

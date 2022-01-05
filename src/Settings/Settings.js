@@ -1,4 +1,4 @@
-import NavBtn from '../UI/NavBtn';
+import BtnMain from '../UI/BtnMain';
 import classes from './Settings.module.css';
 import DownArrow from '../global/assets/DownArrow';
 import DownArrowBtn from '../UI/DownArrowBtn';
@@ -6,16 +6,16 @@ import DownArrowBtn from '../UI/DownArrowBtn';
 const Settings = () => {
   return (
     <div className={classes.settings}>
-      <NavBtn isActive={true}>Pickup</NavBtn>
-      <NavBtn settingsBtn={true}>
+      <BtnMain activeBlack={true}>Pickup</BtnMain>
+      <BtnMain colorGrey={true}>
         Over 4.5 &#9733;
-        <DownArrowBtn />
-      </NavBtn>
-      <NavBtn settingsBtn={true}>Under 30 min</NavBtn>
-      <NavBtn settingsBtn={true}>
+        <DownArrowBtn colorGrey = {true}/>
+      </BtnMain>
+      <BtnMain colorGrey={true}>Under 30 min</BtnMain>
+      <BtnMain colorGrey={true}>
         Price
-        <DownArrowBtn />
-      </NavBtn>
+        <DownArrowBtn colorGrey = {true}/>
+      </BtnMain>
     </div>
   );
 };

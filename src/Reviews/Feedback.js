@@ -9,7 +9,7 @@ const Feedback = () => {
         <div className={classes.feedback__stars}>&#9733; &#9733; &#9733; &#9733; &#9733;</div>
         <span>&bull;</span>
         <div className={classes.feedback__date}>12/1/21</div>
-        <div className={classes.feedback__device}>Reviewed on  <LogoIcon /></div>
+        <div className={classes.feedback__device}>Reviewed on  &nbsp;<LogoIcon /></div>
       </div>
       <div className={classes.feedback__comment}>Great service and food!</div>
     </div>

@@ -1,0 +1,13 @@
+.see-all-reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 17.43px;
+}
+
+.review__direction{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5px;
+}

@@ -1,15 +1,12 @@
-import Feedback from './Feedback';
+import ReviewBox from './ReviewBox';
 import classes from './Reviews.module.css';
-import Stars
- from './Stars/Stars';
+import SeeAllReviews from './SeeAllReviews';
+
 const Reviews = () => {
   return (
     <div className={classes.reviews}>
-      <div className={classes.reviews__header}>
-        <h2>What people are saying</h2>
-      </div>
-      <Stars/>
-      <Feedback/>
+      <ReviewBox />
+      <SeeAllReviews/>
     </div>
   );
 };

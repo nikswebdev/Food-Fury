@@ -1,0 +1,11 @@
+.btn__right div{
+    background-color: #e7e7e7;
+    transform: rotate(270deg);
+    padding: .5rem;
+    border-radius: 50px;
+}
+
+.btn__right div svg{
+    height: 2rem;
+    width: 2rem;
+}

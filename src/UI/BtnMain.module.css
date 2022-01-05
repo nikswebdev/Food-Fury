@@ -1,4 +1,4 @@
-.btn__nav{
+.btn__main{
     font-size: 1.4rem;
     font-weight: bold;
     padding: .7rem 1.25rem;
@@ -10,12 +10,12 @@
     
 }
 
-.btn__active{
+.btn__active--black{
     background-color: black;
     color: white;
 }
 
-.settings{
+.color__grey{
     background-color: #e7e7e7;
     color: black;
     display: flex;

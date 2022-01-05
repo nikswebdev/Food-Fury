@@ -1,9 +1,9 @@
 import DownArrow from '../global/assets/DownArrow';
 import classes from './DownArrowBtn.module.css';
 
-const DownArrowBtn = ()=>{
+const DownArrowBtn = (props)=>{
     return(
-        <button className={classes['down-arrow-btn']}>
+        <button className={`${classes['down-arrow-btn']} ${props.colorGrey && classes['color__grey--down']}`}>
             <DownArrow/>
         </button>
     )
