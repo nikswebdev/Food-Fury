@@ -14,7 +14,7 @@ function App() {
       <main className= {classes.main}>
         <FoodOptions/>
         <Settings/>
-        <div className={classes.dummy}></div>
+        
       </main>
     </div>
   );

@@ -1,5 +1,8 @@
+@import '../global/variables.css';
 .settings{
     display: flex;
     align-items: center;
     gap: 10px;
+    border-bottom: 1px solid var(--border-grey-light);
+    padding-bottom: 2.25rem;
 }
