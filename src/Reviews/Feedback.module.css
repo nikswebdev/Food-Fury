@@ -1,0 +1,22 @@
+.feedback{
+    border: 1px solid  rgb(231, 231, 231);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  align-items: flex-start;
+    justify-content: center;
+    width: 30rem;
+}
+
+.feedback__details{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.feedback__details svg{
+    height: 2rem;
+    width: 2rem;
+    fill: #ff3008;
+    transform: translateY(3px);
+}
