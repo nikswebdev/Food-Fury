@@ -11,10 +11,11 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    padding: 0 6rem;
 }
 
 
-.dummy{
+/* .dummy{
     height: 100vh;
     background-color: yellowgreen;
-}
+} */

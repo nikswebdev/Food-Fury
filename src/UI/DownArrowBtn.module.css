@@ -1,0 +1,9 @@
+.down-arrow-btn {
+  background-color: #e7e7e7;
+  margin-left: .5rem;
+  border: none;
+  border-left: 1px solid #b9b9b9;
+  outline: none;
+  width: max-content;
+  cursor: pointer;
+}
