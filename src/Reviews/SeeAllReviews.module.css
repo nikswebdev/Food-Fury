@@ -3,6 +3,9 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 17.43px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .review__direction{
