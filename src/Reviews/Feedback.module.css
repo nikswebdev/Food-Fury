@@ -33,3 +33,6 @@
     font-weight: 700;
     transform: translateY(2px);
 }
+.feedback__stars{
+    display: flex;
+}
