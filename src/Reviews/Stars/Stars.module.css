@@ -18,4 +18,6 @@
 .rating__figures{
     color: rgb(126, 126, 126);
     font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
 }

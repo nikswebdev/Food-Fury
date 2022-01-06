@@ -1,0 +1,21 @@
+.scroll-container {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 2rem;
+    overflow: scroll;
+    
+  }
+  
+  .scroll-container::-webkit-scrollbar{
+      display: none;
+  }
+
+  .scroll-container__border-bottom{
+    border-bottom: 1px solid rgb(231, 231, 231);
+  }
+  
+  .no__padding{
+      padding: 0;
+      margin-bottom: 0px;
+  }

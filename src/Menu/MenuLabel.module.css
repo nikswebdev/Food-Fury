@@ -1,0 +1,24 @@
+.label{
+    color: rgb(56, 55, 55);
+    font-weight: bold;
+    font-size: 14px;
+    width: max-content;
+    cursor: pointer;
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid transparent;
+    transition: all .2s;
+}
+.label__active{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    width: max-content;
+    cursor: pointer;
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid black;
+    transition: all .2s;
+}

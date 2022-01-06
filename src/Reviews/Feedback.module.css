@@ -23,9 +23,13 @@
 .feedback__device{
     color: rgb(126, 126, 126);
     font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
 }
 .feedback__date{
     color: rgb(126, 126, 126);
     font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
     transform: translateY(2px);
 }

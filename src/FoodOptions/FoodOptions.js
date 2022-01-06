@@ -15,11 +15,11 @@ import SaladIcon from '../global/assets/FoodOptions/SaladIcon';
 import SandwichIcon from '../global/assets/FoodOptions/SandwichIcon';
 import SmoothieIcon from '../global/assets/FoodOptions/SmoothieIcon';
 import FoodOption from './FoodOption';
-import classes from './FoodOptions.module.css';
+import ScrollContainer from '../UI/ScrollContainer';
 
 const FoodOptions = ()=>{
     return(
-        <div className={classes.food__options}>
+        <ScrollContainer>
             <FoodOption name = {'Fast Food'}><FastFoodIcon/></FoodOption>
             <FoodOption name = {'Mexican'}><MexicanIcon/></FoodOption>
             <FoodOption name = {'Chicken'}><ChickenIcon/></FoodOption>
@@ -36,7 +36,7 @@ const FoodOptions = ()=>{
             <FoodOption name = {'Japanese'}><JapaneseIcon/></FoodOption>
             <FoodOption name = {'Italian'}><ItalianIcon/></FoodOption>
             <FoodOption name = {'Smoothie'}><SmoothieIcon/></FoodOption>
-        </div>
+        </ScrollContainer>
     );
 }
 

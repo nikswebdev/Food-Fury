@@ -1,0 +1,15 @@
+.menu-type{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+.menu-type__header{
+    margin-top: 0;
+}
+.menu-type__time{
+    margin-top: -1.5rem;
+    color: rgb(126, 126, 126);
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
+}
