@@ -1,0 +1,5 @@
+.full-menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.5rem;
+}

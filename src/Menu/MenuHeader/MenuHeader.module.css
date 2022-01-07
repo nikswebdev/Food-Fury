@@ -1,0 +1,16 @@
+.menu-header{
+    display: flex;
+    flex-direction: column;
+}
+.menu-header h2{
+    margin: 0;
+}
+
+.menu-header p{
+    margin: 0;
+    margin-top: .5rem;
+    color: rgb(126, 126, 126);
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
+}

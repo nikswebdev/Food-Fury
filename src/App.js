@@ -5,6 +5,7 @@ import NonRestarauntsContainer from './Non-Restaraunts/NonRestarauntsContainer';
 import Reviews from './Reviews/Reviews';
 import Settings from './Settings/Settings';
 import Menu from './Menu/Menu';
+import FullMenu from './Menu/FullMenu/FullMenu';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Settings/>
         <Reviews/>
         <Menu/>
+        <FullMenu/>
       </main>
     </div>
   );
