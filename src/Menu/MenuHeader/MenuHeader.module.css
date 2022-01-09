@@ -1,6 +1,7 @@
 .menu-header{
     display: flex;
     flex-direction: column;
+    margin-top: 4rem;
 }
 .menu-header h2{
     margin: 0;

@@ -17,8 +17,8 @@ const Feedback = (props) => {
     <div className={classes.feedback}>
       <div className={classes.feedback__name}>{props.name}</div>
       <div className={classes.feedback__details}>
-        <div className={classes.feedback__stars}> {stars.map(star => {
-          return <div className={classes.feedback__star}>&#9733;</div>
+        <div className={classes.feedback__stars}> {stars.map((star, index) => {
+          return <div key={index} className={classes.feedback__star}>&#9733;</div>
           })}</div>
         <span>&bull;</span>
         <div className={classes.feedback__date}>{props.date}</div>

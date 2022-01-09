@@ -6,22 +6,32 @@ import Reviews from './Reviews/Reviews';
 import Settings from './Settings/Settings';
 import Menu from './Menu/Menu';
 import FullMenu from './Menu/FullMenu/FullMenu';
+import React, { useContext } from 'react';
+import DUMMY_MENU from './store/store-menu/DUMMY_MENU';
+
+
+
 
 function App() {
+
+
+
   return (
+    
     <div className={classes.app}>
       <header>
         <Nav />
-        <NonRestarauntsContainer/>
+        <NonRestarauntsContainer />
       </header>
-      <main className= {classes.main}>
-        <FoodOptions/>
-        <Settings/>
-        <Reviews/>
-        <Menu/>
-        <FullMenu/>
+      <main className={classes.main}>
+        <FoodOptions />
+        <Settings />
+        <Reviews />
+        <Menu labels={DUMMY_MENU.menu} />
+        <FullMenu menu={DUMMY_MENU.menu}/>
       </main>
     </div>
+    
   );
 }
 

@@ -1,6 +1,5 @@
 import BtnMain from '../UI/BtnMain';
 import classes from './Settings.module.css';
-import DownArrow from '../global/assets/DownArrow';
 import DownArrowBtn from '../UI/DownArrowBtn';
 
 const Settings = () => {

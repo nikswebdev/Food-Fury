@@ -3,20 +3,22 @@ import { Fragment } from 'react';
 import MenuHeader from '../MenuHeader/MenuHeader';
 import MenuCard from '../MenuCard/MenuCard';
 
-const MenuSection = () => {
+const MenuSection = (props) => {
   return (
     <Fragment>
-      <MenuHeader />
-      <div className= {classes.menu__section}>
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
-    
-      </div>
+      {props.menu.map((item) => {
+        return (
+          <div key = {`${item.id}__main-container`}>
+            <MenuHeader key = {`${item.id}__header`} section={item.name} description = {item.description}/>
+            <div key = {`${item.id}__container`} className={classes.menu__section}>
+                {item.items.map(foodItem =>{
+                    return <MenuCard key = {foodItem.id} name = {foodItem.name} price = {foodItem.price}
+                    description = {foodItem.description} img = {foodItem.img}/>
+                })}
+            </div>
+          </div>
+        );
+      })}
     </Fragment>
   );
 };

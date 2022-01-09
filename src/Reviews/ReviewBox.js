@@ -60,7 +60,7 @@ const ReviewBox = () => {
   const displayFeedBack = ()=>{
     return(
       DUMMY_USERS.map(user =>{
-        return <Feedback stars = {user.stars} date = {user.date}
+        return <Feedback key = {user.id} stars = {user.stars} date = {user.date}
         name = {user.name} comment = {user.comment}/>
       })
     );

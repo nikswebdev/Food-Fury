@@ -36,15 +36,14 @@
 }
 
 .menu-card__img{
-    height: 95%;
-    width: 95%;
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 .menu-card__img img{
-    height: 100%;
-    width: 100%;
+  
     margin-right: -2rem;
 }
