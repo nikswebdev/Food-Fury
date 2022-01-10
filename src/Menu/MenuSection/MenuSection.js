@@ -12,7 +12,7 @@ const MenuSection = (props) => {
             <MenuHeader key = {`${item.id}__header`} section={item.name} description = {item.description}/>
             <div key = {`${item.id}__container`} className={classes.menu__section}>
                 {item.items.map(foodItem =>{
-                    return <MenuCard key = {foodItem.id} name = {foodItem.name} price = {foodItem.price}
+                    return <MenuCard onOpenMenu = {props.onOpenMenu} key = {foodItem.id} name = {foodItem.name} price = {foodItem.price}
                     description = {foodItem.description} img = {foodItem.img}/>
                 })}
             </div>

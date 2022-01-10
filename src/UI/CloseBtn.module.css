@@ -1,0 +1,12 @@
+.close__btn svg{
+    height: 2rem;
+    width: 2rem;
+    fill: #494949;
+    cursor: pointer;
+}
+
+.close__btn{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  
+}

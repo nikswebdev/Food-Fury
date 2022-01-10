@@ -1,8 +1,19 @@
+import { useContext } from 'react/cjs/react.development';
+import MenuContext from '../../store/store-menu/menu-context';
 import classes from './MenuCard.module.css';
 
 const MenuCard = (props) => {
+
+ const menuCtx = useContext(MenuContext);
+
+ const openMenu = ()=>{
+     props.onOpenMenu();
+     menuCtx.filterItem(props.name)
+     console.log(menuCtx);
+ }
+
   return (
-    <div className={classes['menu-card']}>
+    <div className={classes['menu-card']} onClick={openMenu} >
       <div className={classes['menu-card__description']}>
         <h3 className={classes['menu-card__header']}>{props.name}</h3>
         <p className={classes['menu-card__text']}>

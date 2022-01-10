@@ -21,3 +21,10 @@
     display: flex;
     align-items: center;
 }
+
+.color__red{
+    background-color: #ff3008;
+    color: white;
+    display: flex;
+    align-items: center;
+}

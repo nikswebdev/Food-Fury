@@ -1,0 +1,7 @@
+.add__btn svg{
+    height: 2rem;
+    width: 2rem;
+    fill: black;
+    display: flex;
+    align-items: center;
+}

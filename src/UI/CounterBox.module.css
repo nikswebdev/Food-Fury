@@ -1,0 +1,23 @@
+.counter-box__change{
+    display: flex;
+    align-items: center;
+}
+.counter-box__change input{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 5rem;
+    height: 3rem;
+    padding-left: 2rem;
+    border-radius: 3px;
+    border: none;
+    background-color:  #f7f7f7;
+    font-weight: 700;    
+}
+
+.counter-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    
+}
