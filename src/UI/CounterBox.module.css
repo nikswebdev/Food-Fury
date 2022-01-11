@@ -12,6 +12,7 @@
     border: none;
     background-color:  #f7f7f7;
     font-weight: 700;    
+    user-select: none;
 }
 
 .counter-box{

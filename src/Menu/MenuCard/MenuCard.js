@@ -9,7 +9,6 @@ const MenuCard = (props) => {
  const openMenu = ()=>{
      props.onOpenMenu();
      menuCtx.filterItem(props.name)
-     console.log(menuCtx);
  }
 
   return (

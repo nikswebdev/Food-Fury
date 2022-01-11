@@ -1,0 +1,14 @@
+.btn__counter{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: .7rem 1.25rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ff3008;
+    color: white;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}

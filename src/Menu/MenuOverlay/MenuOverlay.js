@@ -6,24 +6,27 @@ import CounterBox from '../../UI/CounterBox';
 import CloseBtn from '../../UI/CloseBtn';
 import { useContext } from 'react/cjs/react.development';
 import MenuContext from '../../store/store-menu/menu-context';
+import CartContext from '../../store/store-menu/cart-context';
 
 const Backdrop = (props) => {
   return <div className={classes.backdrop} onClick={props.onCloseMenu}></div>;
 };
 
 const MenuModal = (props) => {
-const menuCtx = useContext(MenuContext);
+  const menuCtx = useContext(MenuContext);
+  
+
 
   return (
     <div className={classes.menu__modal}>
-        <CloseBtn onCloseMenu = {props.onCloseMenu}/>
+      <CloseBtn onCloseMenu={props.onCloseMenu} />
       <h1>{menuCtx.meal.name}</h1>
       <p>{menuCtx.meal.description}</p>
       <div className={classes['menu__modal--img--container']}>
         <img src={menuCtx.meal.img} />
       </div>
       <div className={classes.add__item}>
-        <CounterBox/>
+        <CounterBox meal = {menuCtx.meal} onCloseMenu = {props.onCloseMenu}/>
       </div>
     </div>
   );
@@ -34,8 +37,8 @@ const MenuOverlay = (props) => {
 
   return (
     <Fragment>
-      {ReactDom.createPortal(<Backdrop onCloseMenu = {props.onCloseMenu}></Backdrop>, portalElement)}
-      {ReactDom.createPortal(<MenuModal onCloseMenu = {props.onCloseMenu}></MenuModal>, portalElement)}
+      {ReactDom.createPortal(<Backdrop onCloseMenu={props.onCloseMenu}></Backdrop>, portalElement)}
+      {ReactDom.createPortal(<MenuModal onCloseMenu={props.onCloseMenu}></MenuModal>, portalElement)}
     </Fragment>
   );
 };

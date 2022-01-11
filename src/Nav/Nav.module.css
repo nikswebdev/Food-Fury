@@ -1,9 +1,15 @@
 .nav {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: .9rem 1.5rem;
     border-bottom: 1px solid rgb(231, 231, 231);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 2;
   }
 
 

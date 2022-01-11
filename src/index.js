@@ -4,8 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MenuProvider from './store/store-menu/MenuProvider';
+import CartProvider from './store/store-menu/CartProvider';
 
-ReactDOM.render(<MenuProvider><App /></MenuProvider> , document.getElementById('root'));
+ReactDOM.render(
+  <MenuProvider>
+    <CartProvider>
+      <App />
+    </CartProvider>
+  </MenuProvider>,
+  document.getElementById('root')
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

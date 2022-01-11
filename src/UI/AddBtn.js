@@ -1,9 +1,9 @@
 import classes from './AddBtn.module.css';
 import AddIcon from './AddIcon';
 
-const AddBtn = () => {
+const AddBtn = (props) => {
   return (
-    <div className={classes.add__btn}>
+    <div onClick={props.onclick} className={classes.add__btn}>
       <AddIcon />
     </div>
   );

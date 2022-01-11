@@ -1,9 +1,9 @@
 import classes from './RemoveBtn.module.css';
 import RemoveIcon from './RemoveIcon';
 
-const RemoveBtn = () => {
+const RemoveBtn = (props) => {
   return (
-    <div className={classes.remove__btn}>
+    <div onClick={props.onclick} className={`${classes.remove__btn} ${props.disable && classes.btn__disable}`}>
       <RemoveIcon />
     </div>
   );
