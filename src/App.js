@@ -10,6 +10,7 @@ import React, { Fragment, useContext, useState } from 'react';
 import DUMMY_MENU from './store/store-menu/DUMMY_MENU';
 import MenuOverlay from './Menu/MenuOverlay/MenuOverlay';
 import MenuContext from './store/store-menu/menu-context';
+import CartCheckout from './Cart/CartCheckout';
 
 function App() {
   const menuCtx = useContext(MenuContext);
@@ -24,6 +25,7 @@ function App() {
           <NonRestarauntsContainer />
         </header>
         <main className={classes.main}>
+          <CartCheckout/>
           <FoodOptions />
           <Settings />
           <Reviews />
