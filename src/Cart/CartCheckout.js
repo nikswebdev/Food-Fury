@@ -1,8 +1,14 @@
+import { useContext } from 'react/cjs/react.development';
 import BtnContainer from '../Nav/BtnContainer/BtnContainer';
+import CartContext from '../store/store-menu/cart-context';
 import BtnCounter from '../UI/BtnCounter';
 import classes from './CartCheckout.module.css';
+import CartItem from './CartItem';
 
 const CartCheckout = () => {
+  const cartCtx = useContext(CartContext);
+
+
   return (
     <div className={classes.cart__checkout}>
       <div className={classes['cart__checkout--header']}>
@@ -11,30 +17,17 @@ const CartCheckout = () => {
       </div>
 
       <BtnCounter>
-        Checkout <span>$21.09</span>
+        Checkout <span>${cartCtx.totalCost}</span>
       </BtnCounter>
 
       <h2 className={classes['cart__checkout--header--text']}>This is a delivery order</h2>
 
       <p className={classes['cart__checkout--message']}>
-        {' '}
         Sit back, relax and a Food Fury delivery driver will take care of the annoying stuff for you!
       </p>
-      <div className={classes['cart__checkout--item--container']}>
-        <div className={classes['cart__checkout--item--description']}>
-          <div className={classes['cart__checkout--item--amount']}>
-            <span>3</span>x
-          </div>
-          <div className={classes['cart__checkout--item--name-cost']}>
-            <div className={classes['cart__checkout--item--name']}> Pretzel Bites</div>
-            <div className={classes['cart__checkout--item--cost']}>
-              $<span>21.09</span>
-            </div>
-          </div>
-        </div>
-        
-        <div className={classes['cart__checkout--item--trash--container']}>trash</div>
-      </div>
+     
+      <CartItem/>
+      <CartItem/>
       
     </div>
   );

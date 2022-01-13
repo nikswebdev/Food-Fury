@@ -11,9 +11,11 @@ import DUMMY_MENU from './store/store-menu/DUMMY_MENU';
 import MenuOverlay from './Menu/MenuOverlay/MenuOverlay';
 import MenuContext from './store/store-menu/menu-context';
 import CartCheckout from './Cart/CartCheckout';
+import CartContext from './store/store-menu/cart-context';
 
 function App() {
   const menuCtx = useContext(MenuContext);
+  const cartCtx = useContext(CartContext);
 
   return (
     <Fragment>
@@ -25,7 +27,7 @@ function App() {
           <NonRestarauntsContainer />
         </header>
         <main className={classes.main}>
-          <CartCheckout/>
+          {cartCtx.cartIsOpen && <CartCheckout/>}
           <FoodOptions />
           <Settings />
           <Reviews />
