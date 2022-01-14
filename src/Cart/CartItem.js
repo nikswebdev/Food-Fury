@@ -1,17 +1,17 @@
 import TrashBtn from '../UI/TrashBtn';
 import classes from './CartItem.module.css';
 
-const CartItem = () => {
+const CartItem = (props) => {
   return (
     <div className={classes['cart__checkout--item--container']}>
       <div className={classes['cart__checkout--item--description']}>
         <div className={classes['cart__checkout--item--amount']}>
-          <span>3</span>x
+          <span>{props.quantity}</span>x
         </div>
         <div className={classes['cart__checkout--item--name-cost']}>
-          <div className={classes['cart__checkout--item--name']}> Pretzel Bites</div>
+          <div className={classes['cart__checkout--item--name']}> {props.name}</div>
           <div className={classes['cart__checkout--item--cost']}>
-            $<span>21.09</span>
+            $<span>{props.price}</span>
           </div>
         </div>
       </div>

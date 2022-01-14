@@ -7,6 +7,8 @@ import CartItem from './CartItem';
 
 const CartCheckout = () => {
   const cartCtx = useContext(CartContext);
+  console.log(cartCtx.items)
+
 
 
   return (
@@ -25,9 +27,10 @@ const CartCheckout = () => {
       <p className={classes['cart__checkout--message']}>
         Sit back, relax and a Food Fury delivery driver will take care of the annoying stuff for you!
       </p>
-     
-      <CartItem/>
-      <CartItem/>
+      {cartCtx.items.map(item =>{
+          return <CartItem key = {item.id} name = {item.name} price= {item.price} quantity = {item.quantity}/>
+      })}
+      
       
     </div>
   );
