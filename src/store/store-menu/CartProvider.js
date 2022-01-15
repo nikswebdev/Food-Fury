@@ -23,6 +23,18 @@ const CartProvider = (props) => {
     }
   };
 
+  const removeItem = (mealName)=>{
+    const mapNames = items.map(item =>{ return item.name;});
+    const filteredItemIndex = mapNames.indexOf(mealName);
+
+    setItem(previousItems =>{
+      console.log(previousItems.splice(filteredItemIndex, 1));
+      console.log(previousItems);
+      return [...previousItems];
+    })
+
+  }
+
   const getTotalAmount = () => {
     let updatedAmount = 0;
     items.forEach((item) => {
@@ -48,6 +60,7 @@ const CartProvider = (props) => {
     totalCost: totalCost,
     getTotalAmount: getTotalAmount,
     addItem: addItem,
+    removeItem: removeItem,
   };
   return <CartContext.Provider value={cartContext}>{props.children}</CartContext.Provider>;
 };

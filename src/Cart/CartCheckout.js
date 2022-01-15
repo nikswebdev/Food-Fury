@@ -7,9 +7,9 @@ import CartItem from './CartItem';
 
 const CartCheckout = () => {
   const cartCtx = useContext(CartContext);
-  console.log(cartCtx.items)
-
-
+  const onClickTrash = (mealName)=>{
+    cartCtx.removeItem(mealName);
+  }
 
   return (
     <div className={classes.cart__checkout}>
@@ -19,7 +19,7 @@ const CartCheckout = () => {
       </div>
 
       <BtnCounter>
-        Checkout <span>${cartCtx.totalCost}</span>
+        Checkout <span>${cartCtx.totalCost.toFixed(2)}</span>
       </BtnCounter>
 
       <h2 className={classes['cart__checkout--header--text']}>This is a delivery order</h2>
@@ -28,7 +28,7 @@ const CartCheckout = () => {
         Sit back, relax and a Food Fury delivery driver will take care of the annoying stuff for you!
       </p>
       {cartCtx.items.map(item =>{
-          return <CartItem key = {item.id} name = {item.name} price= {item.price} quantity = {item.quantity}/>
+          return <CartItem key = {item.id} name = {item.name} price= {item.price} quantity = {item.quantity} onClick = {onClickTrash}/>
       })}
       
       

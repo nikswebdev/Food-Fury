@@ -2,6 +2,10 @@ import TrashBtn from '../UI/TrashBtn';
 import classes from './CartItem.module.css';
 
 const CartItem = (props) => {
+  const removeItemHandler = ()=>{
+    props.onClick(props.name);
+  }
+
   return (
     <div className={classes['cart__checkout--item--container']}>
       <div className={classes['cart__checkout--item--description']}>
@@ -16,7 +20,7 @@ const CartItem = (props) => {
         </div>
       </div>
 
-      <div className={classes['cart__checkout--item--trash--container']}><TrashBtn/></div>
+      <div className={classes['cart__checkout--item--trash--container']} onClick={removeItemHandler}><TrashBtn/></div>
     </div>
   );
 };

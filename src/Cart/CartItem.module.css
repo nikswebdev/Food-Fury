@@ -7,7 +7,24 @@
     border-top: 1px solid rgb(231, 231, 231);
     padding: 1rem 0;
     cursor: pointer;
+    animation: open-cart 500ms ease-out;
 }
+
+@keyframes open-cart {
+    0% {
+      transform: translateX(32.5rem);
+      opacity: 0;
+    }
+    75% {
+    
+      opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0rem);
+      opacity: 1;
+    }
+  }
+  
 
 .cart__checkout--item--container:last-of-type{
     border-bottom: 1px solid rgb(231, 231, 231);
